@@ -46,13 +46,13 @@ V5Client的实现依赖了一些系统框架，在开发应用时，要在工程
 - Security.framework
 - MediaPlayer.framework
 
-#### 2.4 CocoaPods导入
+### 2.4 CocoaPods导入
 使用CocoaPods管理依赖库的可以更方便的导入SDK。只需要在 `Podfile` 中加入：
 
 ```
 platform :ios, '8.0'
 
-pod 'V5ClientSDK', '~> 1.2.6'
+pod 'V5ClientSDK', '~> 1.2.7'
 ```
 
 接着pod安装 即可：
@@ -67,7 +67,13 @@ pod 'V5ClientSDK', '~> 1.2.6'
 
 	pod repo update  
 
+### 2.5 Carthage引入
 
+V5Client SDK 支持使用Carthage引入：
+
+```
+github "V5KF/V5ClientFramework-iOS"
+```
 
 ## 3 Info.plist配置
 

@@ -14,6 +14,7 @@
   	 - [4.2.2 Swift 项目](#422-swift项目)
   	 - [4.2.3 引入依赖库](#423-引入依赖库)
   	 - [4.2.4 CocoaPods导入](#424-cocoapods导入)
+  	 - [4.2.5 Carthage引入](#425-carthage引入)
   - [4.3 Info.plist 配置](#43-infoplist配置)
   	 - [4.3.1 ATS](#431-ats)
   	 - [4.3.2 权限](#432-权限)
@@ -143,6 +144,15 @@ pod 'V5ClientSDK', '~> 1.2.6'
 如果运行以上命令，没有搜到或者搜不到最新版本，您可以运行以下命令，更新一下您本地的 CocoaPods 源列表：
 
 	pod repo update  
+
+
+#### 4.2.5 Carthage引入
+
+V5Client SDK 支持使用Carthage引入：
+
+```
+github "V5KF/V5ClientFramework-iOS"
+```
 
 ### 4.3 Info.plist配置
 #### 4.3.1 ATS
