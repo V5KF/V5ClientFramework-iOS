@@ -51,11 +51,14 @@ V5Client的实现依赖了一些系统框架，在开发应用时，要在工程
 
 ```
 platform :ios, '8.0'
+use_frameworks!
 
-pod 'V5ClientSDK', '~> 1.2.7'
+target 'ClientDemo' do
+  pod 'V5Client', '1.2.7’
+end
 ```
 
-接着pod安装 即可：
+target那里的`ClientDemo`改为你的target，接着pod安装即可：
 
 	$ pod install
 
@@ -74,6 +77,8 @@ V5Client SDK 支持使用Carthage引入：
 ```
 github "V5KF/V5ClientFramework-iOS"
 ```
+
+然后把`Carthage/Build/iOS/V5Client.framework`拖入项目配置的`General`->`Embedded Binaries`，并选择`Copy items if needed`。
 
 ## 3 Info.plist配置
 
