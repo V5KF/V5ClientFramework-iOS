@@ -54,7 +54,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'ClientDemo' do
-  pod 'V5Client', '1.2.7’
+  pod 'V5Client'
 end
 ```
 
@@ -64,7 +64,7 @@ target那里的`ClientDemo`改为你的target，接着pod安装即可：
 
 有新版本更新时：
 
-	$ pod update V5ClientSDK
+	$ pod update V5Client
 
 如果运行以上命令，没有搜到或者搜不到最新版本，您可以运行以下命令，更新一下您本地的 CocoaPods 源列表：
 

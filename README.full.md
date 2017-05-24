@@ -130,7 +130,7 @@ V5Client的实现依赖了一些系统框架，在开发应用时，要在工程
 ```
 platform :ios, '8.0'
 
-pod 'V5ClientSDK', '~> 1.2.6'
+pod 'V5Client'
 ```
 
 接着pod安装 即可：
@@ -139,7 +139,7 @@ pod 'V5ClientSDK', '~> 1.2.6'
 
 有新版本更新时：
 
-	$ pod update V5ClientSDK
+	$ pod update V5Client
 
 如果运行以上命令，没有搜到或者搜不到最新版本，您可以运行以下命令，更新一下您本地的 CocoaPods 源列表：
 
