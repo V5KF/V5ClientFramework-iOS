@@ -223,7 +223,7 @@ config.openId = @"ios-user-id-for-test";
 config.userInfo = @{@"商品名称": @"牛仔裤", 
 					@"商品价格": @"¥168.00"};
 
-//用户信息单次设置即生效，更新用户信息或者切换用户时需调用shouldUpdateUserInfo 
+//用户信息设置一次即可，更新用户信息或者切换用户时需调用shouldUpdateUserInfo 
 //[config shouldUpdateUserInfo];
 ```
 
